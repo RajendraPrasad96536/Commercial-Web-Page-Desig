@@ -1,0 +1,10 @@
+set P:= blue gold;
+param t:= 40;
+param p:= blue 10
+		  gold 15;
+		  
+param r:= blue 40
+		  gold 30;
+		  
+param m:= blue 1000
+		  gold 860;

@@ -1,0 +1,158 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body {
+    background-color: lightgreen;
+}
+
+.Header{
+    margin-top: 10px;
+    margin-left: 450px;
+    padding: 10px;
+    background-color: blue;
+}
+
+.header{
+	font-family: serif;
+}
+
+.logo{
+    height: 90px;
+    width: auto;
+    float: left;
+    margin-left:-20px;
+    margin-top: 10px;
+}
+
+
+.main-nav{
+    float: right;
+    margin-top: 30px;
+    margin-right: 5px;
+}
+
+.main-nav li{
+    display: inline-block;
+    list-style: none;
+    margin-right: 10px;
+}
+
+.row{
+    max-width: 1230px;
+    margin: 0 auto;
+}
+
+
+.main-nav li a{
+    color:#800000;
+    text-decoration: none;
+    font-size: 110%;
+    font-weight: 100;
+}
+
+
+.register{
+	background: powderblue;
+    width: 500px;
+    margin: 0px 0px 0px 430px;
+    color: black;
+    font-size: 15px;
+    padding: 20px;
+    border-radius : 10px;
+    line-height: 1.3;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    line-height: 45px;
+}
+
+#register{
+    text-align: center;
+}
+
+.styled-select{
+    margin-left: 70px;
+}
+
+.styled-select select{
+    width: 315px;
+    height: 37px;
+    border-radius: 5px;
+    border : none;
+    padding: 7px;
+}
+
+label{
+	color: black;
+	font-size:  18px;
+	font-family: Georgia;
+    margin-left: 70px;
+}
+
+#name{
+	width: 300px;
+    height: 25px;
+	border-radius: 5px;
+	border : none;
+	padding: 7px;
+    margin-left: 70px;
+}
+
+.login input[type="submit"]{
+    border: none;
+    outline: none;
+    width: 300px;
+    height: 40px;
+    margin-left: 70px;
+    background: #fb2525;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px; 
+}
+
+.login input[type="submit"]:hover{
+    cursor: pointer;
+    background: #ffc107;
+    color: #000;
+}
+
+.radio{
+    margin-left: 70px;
+    word-spacing: 30px;
+    font-size: 18px;
+}
+
+#message {
+  display:none;
+  background: #f1f1f1;
+  color: #000;
+  position: relative;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+#message p {
+  padding: 10px 35px;
+  font-size: 18px;
+}
+
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+  left: -35px;
+  content: "&#10004;";
+}
+
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+  content: "&#10006;";
+}

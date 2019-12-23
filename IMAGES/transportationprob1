@@ -1,0 +1,14 @@
+param warehouses;
+param customers;
+param cost {i in 1..warehouses, j in 1..customers};
+param supply{i in 1..warehouses};
+param demand{j in 1..customers};
+
+var amount{i in 1..warehouses, j in 1..customers};
+
+minimize Cost :
+sum{i in 1..warehouses, j in 1..customers} cost[i, j]*amount[i,j];
+subject to Supply{i in 1..warehouses}:sum{j in 1..customers} amount[i,j]= supply[i];
+subject to Demand{i in 1..customers}:sum{j in 1..warehouses} amount[i,j]= demand[j];
+subject to positive { i in 1..customers, j in 1..warehouses}:
+amount[i,j]>=0;
